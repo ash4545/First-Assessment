@@ -1,0 +1,19 @@
+var Color;
+function preload() {
+  // Get the most recent color in the database
+  var url =
+   'https://www.sitepoint.com/colors-json-example/' +
+    'Color.json';
+  Color = loadJSON(url);
+}
+
+function setup() {
+  noLoop();
+}
+
+function draw() {
+  background(200);
+  var color = color.features[0].properties;
+  var color = color.features[0].properties;
+  text(red, black, white);
+}

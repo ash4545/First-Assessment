@@ -1,0 +1,30 @@
+<SCRIPT LANGUAGE = "JavaScript">
+<!--
+
+function modify_boxes(to_be_checked,total_boxes){
+ for ( i=0 ; i < total_boxes ; i++ ){
+   if (to_be_checked){  
+ document.forms[0].chkboxarray[i].checked=true;
+}
+   else{
+   
+document.forms[0].chkboxarray[i].checked=false;
+   }
+ }  
+}
+   
+-->
+</SCRIPT>
+
+
+<BODY>
+<FORM>
+<INPUT TYPE=checkbox NAME="chkboxarray" VALUE="1"><br>
+<INPUT TYPE=checkbox NAME="chkboxarray" VALUE="2"><br>
+<INPUT TYPE=checkbox NAME="chkboxarray" VALUE="3"><br>
+<INPUT TYPE=checkbox NAME="chkboxarray" VALUE="4"><br>
+<INPUT TYPE=checkbox NAME="chkboxarray" VALUE="5"><br>
+<INPUT TYPE=button NAME="CheckAll" VALUE="Check All Boxes" onClick="modify_boxes(true,5)">
+<INPUT TYPE=button NAME="UnCheckAll" VALUE="UnCheck All Boxes" onClick="modify_boxes(false,5)">
+</FORM>
+</BODY>   

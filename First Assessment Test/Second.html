@@ -1,0 +1,19 @@
+syntax
+--------
+/*
+function randomString(anysize, charset) {
+    var res = '';
+    while (anysize--) res += charset[Math.random() * charset.length | 0];
+    return res;
+}
+
+
+
+var anysize = 3;//the size of string 
+var charset = "abcdefghijklmnopqrstuvwxyz"; //from where to create
+var i=0, ret='';
+while(i++<anysize)
+  ret += charset.charAt(Math.random() * charset.length)
+  
+console.log(ret);
+
